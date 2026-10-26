@@ -1,5 +1,7 @@
 # CS411 Spring 2027 · Lab 5: RPC Communication
 
+Starter template: https://github.com/cwillpinto/cs411-spring2027-lab05-rpc-communication
+
 Read the included handout. The Protocol Buffers contract and generated Go bindings are supplied so the starter builds. Explain the fields and wire trace in your analysis, then complete the TODOs in `server/server.go` and `client/client.go`.
 
 ```sh
@@ -18,7 +20,7 @@ If Blackboard links a template repository, choose **Use this template**, create 
 For a direct clone, first create an empty repository under your account. Replace the placeholders below with the starter link supplied in Blackboard and your own empty repository URL:
 
 ```sh
-git clone <instructor-starter-url>
+git clone https://github.com/cwillpinto/cs411-spring2027-lab05-rpc-communication
 cd <cloned-directory>
 git remote rename origin upstream
 git remote add origin <your-empty-repository-url>

@@ -5,6 +5,8 @@
 **Due:** February 21, 2027  
 **Value:** 100 points
 
+**Starter repository:** [Open the Spring 2027 starter](https://github.com/cwillpinto/cs411-spring2027-lab05-rpc-communication)
+
 ## Purpose
 
 Implement a small gRPC service whose network boundary remains visible. Trace one request, inject a delayed response, and use request identifiers to make duplicate retries observable and safe.
