@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ledger;
+option go_package = "cs411-lab05-rpc/proto;ledger";
+
+// A request ID identifies one logical operation, including retries.
+message ApplyRequest {
+  string request_id = 1;
+  string operation = 2; // "add" or "subtract"
+  int64 amount = 3;
+}
+
+message ApplyResponse {
+  int64 result = 1;
+  string status = 2; // "applied", "duplicate", or "invalid"
+}
+
+service Ledger {
+  rpc Apply(ApplyRequest) returns (ApplyResponse);
+}
